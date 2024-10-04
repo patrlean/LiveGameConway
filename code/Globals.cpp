@@ -24,3 +24,4 @@ int cellSize = 5;
 int numThreads = 8;
 std::string processingType = "THRD";
 
+ 

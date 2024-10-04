@@ -15,7 +15,6 @@ This is the main file of Game of Life.
 #include <chrono>
 #include <omp.h>
 
-
 #include "Globals.hpp"
 #include "Block.hpp"
 #include "Grid.hpp"
