@@ -5,18 +5,13 @@ project(LiveGame LANGUAGES CXX)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
-# set SFML directory
-set(SFML_DIR "${CMAKE_SOURCE_DIR}/SFML/build")
-set(SFML_LIBRARY_DIR "${CMAKE_SOURCE_DIR}/SFML/build/lib/Debug")
-
-# Include SFML as a subdirectory
 add_subdirectory(SFML)
+# set SFML directory
+set(SFML_LIBRARY_DIR "${CMAKE_SOURCE_DIR}/SFML/build/lib/Debug")
 
 # include head files
 include_directories(include)
 
-# Find SFML
-find_package(SFML 2.6 COMPONENTS graphics REQUIRED)
 # Find OpenMP
 find_package(OpenMP REQUIRED)
 

@@ -1,7 +1,7 @@
 # LiveGameConway
 
-## Compile the CMakeList under the SFML folder.
-1. create a 'build' folder in the SFML folder
+## Please first Compile the CMakeList under the SFML folder.
+1. If no build folder under SFML folder, create a 'build' folder in the SFML folder
 ```
 cd SFML
 mkdir build
