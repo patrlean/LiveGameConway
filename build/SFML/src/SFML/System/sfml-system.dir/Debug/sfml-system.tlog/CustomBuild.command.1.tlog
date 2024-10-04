@@ -1,0 +1,10 @@
+^E:\MASTER\6122\LAB\LAB2\LAB2\SFML\SRC\SFML\SYSTEM\CMAKELISTS.TXT
+setlocal
+E:\master\6122\CMake\bin\cmake.exe -SE:/master/6122/LAB/LAB2/LAB2 -BE:/master/6122/LAB/LAB2/LAB2/build --check-stamp-file E:/master/6122/LAB/LAB2/LAB2/build/SFML/src/SFML/System/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
